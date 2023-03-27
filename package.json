@@ -1,6 +1,6 @@
 {
   "name": "isomorphic-filesystem",
-  "version": "0.8.8",
+  "version": "0.8.9",
   "author": "Abhishiv Saxena<abhishiv@gmail.com>",
   "description": "node.js fs compactiable fs library with support for memory, indexeddb, and custom adapters",
   "license": "UNLICENSED",
@@ -9,7 +9,7 @@
     "filesystem",
     "isomorphic"
   ],
-  "url": "https://github.com/abhishiv/isofs",
+  "url": "https://github.com/abhishiv/isomorphic-filesystem",
   "files": [
     "/dist"
   ],
