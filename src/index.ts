@@ -25,9 +25,7 @@ export * from "./adapters/memory";
 const shortid = { generate: () => nanoid() };
 
 export function Bufferfrom(obj: string, encoding?: string) {
-  console.log(obj);
-  //  console.log(Buffer.from(obj).toString('utf8'))
-  return new TextEncoder().encode(obj);
+  return obj;
 }
 
 const nopCb = () => {};

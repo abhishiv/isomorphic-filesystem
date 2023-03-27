@@ -1,5 +1,5 @@
 {
-  "name": "@gratico/fs",
+  "name": "isofs",
   "version": "0.8.7",
   "author": "Abhishiv Saxena<abhishiv@gmail.com>",
   "description": "node.js fs compactiable fs library with support for memory, indexeddb, and custom adapters",
@@ -7,7 +7,7 @@
   "keywords": [
     "gratico-engineering"
   ],
-  "url": "https://github.com/gratico/fs",
+  "url": "https://github.com/abhishiv/isofs",
   "accessConfig": {
     "public": true
   },

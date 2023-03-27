@@ -7,9 +7,12 @@ test("FS", () => {
   const adapter = new InMemoryAdapter();
   const fs = new FS(adapter);
   fs.mkdirSync("/");
-  console.log(fs);
-  const b = fs.writeFileSync("/d", "dsf");
+  fs.mkdirSync("/folder");
+  const list = fs.readdirSync("/");
+  console.log(list);
+  expect(list.length).toBe(1);
+  const text = "dsf";
+  const b = fs.writeFileSync("/d", text);
   const b2 = fs.readFileSync("/d", { encoding: "utf8" });
-  console.log(b2);
-  expect(1).toBeDefined();
+  expect(b2).toBe(text);
 });
