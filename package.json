@@ -1,5 +1,5 @@
 {
-  "name": "isomorphic-fs",
+  "name": "isomorphic-filesystem",
   "version": "0.8.7",
   "author": "Abhishiv Saxena<abhishiv@gmail.com>",
   "description": "node.js fs compactiable fs library with support for memory, indexeddb, and custom adapters",
