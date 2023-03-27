@@ -1,0 +1,43 @@
+{
+  "name": "@gratico/fs",
+  "version": "0.8.7",
+  "author": "Abhishiv Saxena<abhishiv@gmail.com>",
+  "description": "node.js fs compactiable fs library with support for memory, indexeddb, and custom adapters",
+  "license": "UNLICENSED",
+  "keywords": [
+    "gratico-engineering"
+  ],
+  "url": "https://github.com/gratico/fs",
+  "accessConfig": {
+    "public": true
+  },
+  "files": [
+    "/dist"
+  ],
+  "main": "./dist/cjs/index.js",
+  "typings": "./dist/cjs/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js",
+      "types": "./dist/esm/index.d.ts"
+    }
+  },
+  "dependencies": {
+    "pure-md5": "*",
+    "idb": "^7.0.0",
+    "sift": "^13.1.10",
+    "nanoid": "^3.3.6"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "typescript": "^4.9.5",
+    "vite": "^4.1.4",
+    "vitest": "^0.28.5"
+  },
+  "scripts": {
+    "build": "npx tsc --resolveJsonModule -p ./tsconfig.json --outDir ./dist/esm && npx tsc --resolveJsonModule -p ./tsconfig.json --module commonjs --outDir ./dist/cjs",
+    "test": "npx vitest --run --passWithNoTests",
+    "coverage": "vitest run --coverage --run --passWithNoTests"
+  }
+}
