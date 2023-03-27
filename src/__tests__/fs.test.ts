@@ -2,6 +2,7 @@ import { assert, expect, test } from "vitest";
 import { promisify } from "util";
 import { FS } from "../index";
 import { InMemoryAdapter } from "../adapters/memory";
+
 test("FS", () => {
   const adapter = new InMemoryAdapter();
   const fs = new FS(adapter);
