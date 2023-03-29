@@ -13,13 +13,11 @@
   "files": [
     "/dist"
   ],
-  "main": "./dist/cjs/index.js",
-  "typings": "./dist/cjs/index.d.ts",
+  "main": "./src/index.tsx",
   "exports": {
     ".": {
-      "require": "./dist/cjs/index.js",
-      "import": "./dist/esm/index.js",
-      "types": "./dist/esm/index.d.ts"
+      "import": "./src/index.tsx",
+      "require": "./src/index.tsx"
     }
   },
   "dependencies": {
